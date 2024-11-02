@@ -1,76 +1,536 @@
-proxy-providers:
-  Gaming:
-    type: file
-    path: "./gaming.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  Sosmed:
-    type: file
-    path: "./sosmed.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  Streaming:
-    type: file
-    path: "./streaming.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  Umum:
-    type: file
-    path: "./umum.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-  trafficIndo:
-    type: file
-    path: "./trafficIndo.yaml"
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
+proxies:
+  - name: CV.+Rumahweb+Indonesia+(ID)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=203.194.112.119:8443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Google+LLC+(ID)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=35.219.50.99:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Google+LLC+(ID) 2
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=35.219.15.90:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: ADSL+Streamyx+Telekom+Malaysia+(MY)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=210.186.12.244:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Ace+Data+Centers+II+(MY)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=166.88.35.141:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: DigitalOcean,+LLC+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=167.71.194.185:8443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: ByteVirt+LLC+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=89.34.227.166:8443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: The+Constant+Company+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=45.77.36.40:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Shenzhen+Tencent+Computer+Systems+Company+Limited+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=43.134.34.18:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: iFog+GmbH+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=103.180.193.56:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Capitalonline+Data+Service+(HK)+Co+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=164.52.2.100:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: OVH+SAS+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=51.79.254.182:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: DigitalOcean,+LLC+(SG) 2
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=104.248.145.216:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: NPO+G-net+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=185.217.5.3:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Oracle+Corporation+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=129.150.50.63:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Aryaka+Networks,+Inc.+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=185.114.78.230:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: First+Server+Limited+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=194.36.179.237:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Amazon.com,+Inc.+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=52.74.101.26:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Akamai+Technologies,+Inc.+(SG)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=143.42.66.91:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: DigitalOcean,+LLC+(SG) 3
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=178.128.80.43:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Leaseweb+Deutschland+GmbH+(DE)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=38.180.165.29:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: First+Server+Limited+(RU)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=185.103.109.139:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Citytelecom+LLC+(RU)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=31.28.27.38:443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: PT+Cloud+Hosting+Indonesia+(ID)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=103.186.1.209:8443
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
+  - name: Linknet-Fastnet+ASN+(ID)
+    server: quiz.int.vidio.com.
+    port: 443
+    type: vless
+    uuid: FREE-VLESS-BMGK-XYZ
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: quiz.int.vidio.com.xvp.bmkg.xyz
+    network: ws
+    ws-opts:
+      path: /vl=111.95.40.14:32414
+      headers:
+        Host: quiz.int.vidio.com.xvp.bmkg.xyz
+    udp: true
 proxy-groups:
 - name: Gaming
   type: url-test
   disable-udp: false
-  use:
-  - Gaming
+  proxies:
+      - CV.+Rumahweb+Indonesia+(ID)
+      - Google+LLC+(ID)
+      - Google+LLC+(ID) 2
+      - ADSL+Streamyx+Telekom+Malaysia+(MY)
+      - Ace+Data+Centers+II+(MY)
+      - DigitalOcean,+LLC+(SG)
+      - ByteVirt+LLC+(SG)
+      - The+Constant+Company+(SG)
+      - Shenzhen+Tencent+Computer+Systems+Company+Limited+(SG)
+      - iFog+GmbH+(SG)
+      - Capitalonline+Data+Service+(HK)+Co+(SG)
+      - OVH+SAS+(SG)
+      - DigitalOcean,+LLC+(SG) 2
+      - NPO+G-net+(SG)
+      - Oracle+Corporation+(SG)
+      - Aryaka+Networks,+Inc.+(SG)
+      - First+Server+Limited+(SG)
+      - Amazon.com,+Inc.+(SG)
+      - Akamai+Technologies,+Inc.+(SG)
+      - DigitalOcean,+LLC+(SG) 3
+      - Leaseweb+Deutschland+GmbH+(DE)
+      - First+Server+Limited+(RU)
+      - Citytelecom+LLC+(RU)
+      - PT+Cloud+Hosting+Indonesia+(ID)
+      - Linknet-Fastnet+ASN+(ID)
   url: http://www.gstatic.com/generate_204
   interval: '600'
 - name: Sosmed
   type: load-balance
   strategy: consistent-hashing
   disable-udp: false
-  use:
-  - Sosmed
+  proxies:
+      - CV.+Rumahweb+Indonesia+(ID)
+      - Google+LLC+(ID)
+      - Google+LLC+(ID) 2
+      - ADSL+Streamyx+Telekom+Malaysia+(MY)
+      - Ace+Data+Centers+II+(MY)
+      - DigitalOcean,+LLC+(SG)
+      - ByteVirt+LLC+(SG)
+      - The+Constant+Company+(SG)
+      - Shenzhen+Tencent+Computer+Systems+Company+Limited+(SG)
+      - iFog+GmbH+(SG)
+      - Capitalonline+Data+Service+(HK)+Co+(SG)
+      - OVH+SAS+(SG)
+      - DigitalOcean,+LLC+(SG) 2
+      - NPO+G-net+(SG)
+      - Oracle+Corporation+(SG)
+      - Aryaka+Networks,+Inc.+(SG)
+      - First+Server+Limited+(SG)
+      - Amazon.com,+Inc.+(SG)
+      - Akamai+Technologies,+Inc.+(SG)
+      - DigitalOcean,+LLC+(SG) 3
+      - Leaseweb+Deutschland+GmbH+(DE)
+      - First+Server+Limited+(RU)
+      - Citytelecom+LLC+(RU)
+      - PT+Cloud+Hosting+Indonesia+(ID)
+      - Linknet-Fastnet+ASN+(ID)
   url: http://www.gstatic.com/generate_204
   interval: '300'
 - name: Streaming
   type: load-balance
   strategy: consistent-hashing
   disable-udp: false
-  use:
-  - Streaming
+  proxies:
+      - CV.+Rumahweb+Indonesia+(ID)
+      - Google+LLC+(ID)
+      - Google+LLC+(ID) 2
+      - ADSL+Streamyx+Telekom+Malaysia+(MY)
+      - Ace+Data+Centers+II+(MY)
+      - DigitalOcean,+LLC+(SG)
+      - ByteVirt+LLC+(SG)
+      - The+Constant+Company+(SG)
+      - Shenzhen+Tencent+Computer+Systems+Company+Limited+(SG)
+      - iFog+GmbH+(SG)
+      - Capitalonline+Data+Service+(HK)+Co+(SG)
+      - OVH+SAS+(SG)
+      - DigitalOcean,+LLC+(SG) 2
+      - NPO+G-net+(SG)
+      - Oracle+Corporation+(SG)
+      - Aryaka+Networks,+Inc.+(SG)
+      - First+Server+Limited+(SG)
+      - Amazon.com,+Inc.+(SG)
+      - Akamai+Technologies,+Inc.+(SG)
+      - DigitalOcean,+LLC+(SG) 3
+      - Leaseweb+Deutschland+GmbH+(DE)
+      - First+Server+Limited+(RU)
+      - Citytelecom+LLC+(RU)
+      - PT+Cloud+Hosting+Indonesia+(ID)
+      - Linknet-Fastnet+ASN+(ID)
   url: http://www.gstatic.com/generate_204
   interval: '300'
 - name: trafficIndo
   type: url-test
   disable-udp: false
-  use:
-  - trafficIndo
+  proxies:
+      - CV.+Rumahweb+Indonesia+(ID)
+      - Google+LLC+(ID)
+      - Google+LLC+(ID) 2
+      - ADSL+Streamyx+Telekom+Malaysia+(MY)
+      - Ace+Data+Centers+II+(MY)
+      - DigitalOcean,+LLC+(SG)
+      - ByteVirt+LLC+(SG)
+      - The+Constant+Company+(SG)
+      - Shenzhen+Tencent+Computer+Systems+Company+Limited+(SG)
+      - iFog+GmbH+(SG)
+      - Capitalonline+Data+Service+(HK)+Co+(SG)
+      - OVH+SAS+(SG)
+      - DigitalOcean,+LLC+(SG) 2
+      - NPO+G-net+(SG)
+      - Oracle+Corporation+(SG)
+      - Aryaka+Networks,+Inc.+(SG)
+      - First+Server+Limited+(SG)
+      - Amazon.com,+Inc.+(SG)
+      - Akamai+Technologies,+Inc.+(SG)
+      - DigitalOcean,+LLC+(SG) 3
+      - Leaseweb+Deutschland+GmbH+(DE)
+      - First+Server+Limited+(RU)
+      - Citytelecom+LLC+(RU)
+      - PT+Cloud+Hosting+Indonesia+(ID)
+      - Linknet-Fastnet+ASN+(ID)
   url: http://www.gstatic.com/generate_204
   interval: '300'
 - name: Umum
   type: load-balance
   strategy: consistent-hashing
   disable-udp: false
-  use:
-  - Umum
+  proxies:
+      - CV.+Rumahweb+Indonesia+(ID)
+      - Google+LLC+(ID)
+      - Google+LLC+(ID) 2
+      - ADSL+Streamyx+Telekom+Malaysia+(MY)
+      - Ace+Data+Centers+II+(MY)
+      - DigitalOcean,+LLC+(SG)
+      - ByteVirt+LLC+(SG)
+      - The+Constant+Company+(SG)
+      - Shenzhen+Tencent+Computer+Systems+Company+Limited+(SG)
+      - iFog+GmbH+(SG)
+      - Capitalonline+Data+Service+(HK)+Co+(SG)
+      - OVH+SAS+(SG)
+      - DigitalOcean,+LLC+(SG) 2
+      - NPO+G-net+(SG)
+      - Oracle+Corporation+(SG)
+      - Aryaka+Networks,+Inc.+(SG)
+      - First+Server+Limited+(SG)
+      - Amazon.com,+Inc.+(SG)
+      - Akamai+Technologies,+Inc.+(SG)
+      - DigitalOcean,+LLC+(SG) 3
+      - Leaseweb+Deutschland+GmbH+(DE)
+      - First+Server+Limited+(RU)
+      - Citytelecom+LLC+(RU)
+      - PT+Cloud+Hosting+Indonesia+(ID)
+      - Linknet-Fastnet+ASN+(ID)
   url: http://www.gstatic.com/generate_204
   interval: '300'
 redir-port: 7892
