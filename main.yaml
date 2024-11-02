@@ -953,13 +953,13 @@ rule-providers:
   rule_twitter:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/twitter.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/twitter.yaml
     path: "./rule_twitter.yaml"
     interval: 86400
   rule_Youtube:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/youtube.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/youtube.yaml
     path: "./rule_Youtube.yaml"
     interval: 86400
 ipv6: true
