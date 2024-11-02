@@ -773,193 +773,195 @@ tun:
 tproxy-port: 7895
 rule-providers:
   rule_Direct:
-    type: file
+    type: http
     behavior: classical
     path: "./rule_direct.yaml"
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_direct.yaml
+    interval: 86400
   rule_umum:
     type: http
     behavior: classical
     path: "./rule_umum.yaml"
-    url: https://cdn.jsdelivr.net/gh/malikshi/clash_for_android@main/rule_provider/rule_umum.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_umum.yaml
     interval: 86400
   rule_portgames:
     type: http
     behavior: classical
     path: "./rule_portgames.yaml"
-    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_portgames.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_portgames.yaml
     interval: 86400
   rule_videoconferences:
     type: http
     behavior: classical
     path: "./rule_videoconferences.yaml"
-    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_videoconferences.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_videoconferences.yaml
     interval: 86400
   rule_Indo:
     type: http
     behavior: classical
     path: "./rule_Indo.yaml"
-    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_Indo.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_Indo.yaml
     interval: 86400
   rule_Sosmed:
     type: http
     behavior: classical
     path: "./rule_sosmed.yaml"
-    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_sosmed.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_sosmed.yaml
     interval: 86400
   rule_Streaming:
     type: http
     behavior: classical
     path: "./rule_streaming.yaml"
-    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_streaming.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_streaming.yaml
     interval: 86400
   rule_Gaming:
     type: http
     behavior: classical
     path: "./rule_gaming.yaml"
-    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_gaming.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_gaming.yaml
     interval: 86400
   rule_Speedtest:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/speedtest.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_speedtest.yaml
     path: "./rule_speedtest.yaml"
     interval: 86400
   rule_discord:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/discord.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_discord.yaml
     path: "./rule_discord.yaml"
     interval: 86400
   rule_BlockAds:
     type: http
     behavior: classical
     path: "./rule_BlockAds.yaml"
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_BlockAds.yaml
     interval: 86400
   rule_reject:
     type: http
     behavior: domain
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_reject.yaml
     path: "./rule_reject.yaml"
     interval: 86400
   rule_privacy:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy_Classical.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_privacy.yaml
     path: "./rule_privacy.yaml"
     interval: 86400
   rule_basicads:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_basicads.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_basicads.yaml
     path: "./rule_basicads.yaml"
     interval: 86400
   rule_porn:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/category-porn.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_porn.yaml
     path: "./rule_porn.yaml"
     interval: 86400
   rule_nsfw:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_nsfw.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_nsfw.yaml
     path: "./rule_nsfw.yaml"
     interval: 86400
   rule_lancidr:
     type: http
     behavior: ipcidr
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_lancidr.yaml
     path: "./rule_lancidr.yaml"
     interval: 86400
   rule_telegramcidr:
     type: http
     behavior: ipcidr
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_telegramcidr.yaml
     path: "./rule_telegramcidr.yaml"
     interval: 86400
   rule_telegram:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/telegram.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_telegram.yaml
     path: "./rule_telegram.yaml"
     interval: 86400
   rule_disneyplus:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/disney.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_disneyplus.yaml
     path: "./rule_disneyplus.yaml"
     interval: 86400
   rule_games:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/category-games.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_games.yaml
     path: "./rule_games.yaml"
     interval: 86400
   rule_hbo:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/hbo.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_hbo.yaml
     path: "./rule_hbo.yaml"
     interval: 86400
   rule_iqiyi:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/iqiyi.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_iqiyi.yaml
     path: "./rule_iqiyi.yaml"
     interval: 86400
   rule_line:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/line.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_line.yaml
     path: "./rule_line.yaml"
     interval: 86400
   rule_metaverse:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/facebook.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_metaverse.yaml
     path: "./rule_metaverse.yaml"
     interval: 86400
   rule_netflix:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/netflix.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_netflix.yaml
     path: "./rule_netflix.yaml"
     interval: 86400
   rule_primevideo:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/primevideo.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_primevideo.yaml
     path: "./rule_primevideo.yaml"
     interval: 86400
   rule_playstore:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/malikshi/clash_for_android/main/rule_provider/rule_playstore.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_playstore.yaml
     path: "./rule_playstore.yaml"
     interval: 86400
   rule_tiktok:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/tiktok.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_tiktok.yaml
     path: "./rule_tiktok.yaml"
     interval: 86400
   rule_twitch:
     type: http
     behavior: domain
-    url: https://rules.kr328.app/twitch.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/twitch.yaml
     path: "./rule_twitch.yaml"
     interval: 86400
   rule_twitter:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/twitter.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_twitter.yaml
     path: "./rule_twitter.yaml"
     interval: 86400
   rule_Youtube:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/youtube.yaml
+    url: https://raw.githubusercontent.com/win877969/cmfa/main/rule_provider/rule_Youtube.yaml
     path: "./rule_Youtube.yaml"
     interval: 86400
 ipv6: true
